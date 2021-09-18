@@ -38,13 +38,6 @@ public class Taill
         oldpost = tailComp.transform.position;
     }
     
-     public static void ccheck(int i, List<Taill> _taills, Head _head ,float swapz)
-    {
-        if (_taills[i].renderer.material.color != _head.renderer.material.color &&
-            _taills[i].tailComp.transform.position.z > swapz)
-        {
-            _taills[i].renderer.material.color = _head.renderer.material.color;
-        }
-    }
+     
 
 }

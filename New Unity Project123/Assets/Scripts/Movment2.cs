@@ -16,6 +16,8 @@ public class Movment2 : MonoBehaviour
     public static int fewcount=0;
     void Start()
     {
+        fewcount = 0;
+        feawer = true;
         
         _camera = GameObject.Find("Main Camera");
         
@@ -38,12 +40,12 @@ public class Movment2 : MonoBehaviour
         _oldpos = _head.head.transform.position;
         var moveTail1 = _taills[0].MoveTail(_oldpos);
         StartCoroutine(moveTail1);
-        Taill.ccheck(0,_taills,_head,swapz);
+        ccheck(0);
         for (var i =1;i< _taills.Count;i++)
         {
             var moveTail = _taills[i].MoveTail(_taills[i-1].oldpost);
             StartCoroutine(moveTail);
-            Taill.ccheck(0,_taills,_head,swapz);
+            ccheck(i);
         }
         
         if (fewcount == 3)
@@ -104,6 +106,14 @@ public class Movment2 : MonoBehaviour
         {
             Addpart();
             Destroy(other.collider.gameObject); 
+        }
+    }
+    public void ccheck(int i)
+    {
+        if (_taills[i].renderer.material.color != _head.renderer.material.color &&
+            _taills[i].tailComp.transform.position.z > swapz)
+        {
+            _taills[i].renderer.material.color = _head.renderer.material.color;
         }
     }
 }
