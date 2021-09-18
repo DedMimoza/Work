@@ -88,7 +88,6 @@ public class Movment2 : MonoBehaviour
         if (other.collider.CompareTag("food")&& other.collider.gameObject.GetComponent<Renderer>().material.color == _head.renderer.material.color && feawer)
         {
             Addpart();
-            Debug.Log("Lox");
             Destroy(other.collider.gameObject); 
         }
         else if (other.collider.CompareTag("food") && feawer)
@@ -104,7 +103,6 @@ public class Movment2 : MonoBehaviour
         else if(other.collider.CompareTag("food") && !feawer)
         {
             Addpart();
-            Debug.Log("Lox");
             Destroy(other.collider.gameObject); 
         }
     }

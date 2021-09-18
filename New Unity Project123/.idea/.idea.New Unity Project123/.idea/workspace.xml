@@ -50,8 +50,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UIer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Eater.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Taill.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Movment2.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Head.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Movment2.cs" />
       </list>
     </option>
   </component>
@@ -101,6 +101,7 @@
       <workItem from="1631778463441" duration="5233000" />
       <workItem from="1631873913634" duration="6939000" />
       <workItem from="1631966387414" duration="5972000" />
+      <workItem from="1632000415012" duration="31000" />
     </task>
     <servers />
   </component>
